@@ -1,5 +1,5 @@
 # Portfolio - Site web adaptatif
-[> Page détaillé de l'exercice sur mon site <](neo-explorer.com/portfolio/responsive "Page de l'exercice sur mon site")
+[> Page détaillé de l'exercice sur mon site <](http://neo-explorer.com/portfolio/responsive "Page de l'exercice sur mon site")
 
 Les supports de consultation étant de plus en plus variés (ordinateurs de bureau, tablettes, smartphone, télévision…), il est important d'offrir aux utilisateurs une interface adéquate peu importe ce dernier. C'était un exercice visant à adapter l'affichage des articles d'un blog via le framework CSS : Bootstrap.
 
