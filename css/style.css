@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+
+body {
+  font-family: 'Arial', serif;
+  font-weight: 400;
+  font-size: 12px;
+  word-wrap: break-word;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0.6em 0;
+  font-size: 2.8em;
+}
+
+h1 {
+  border-top: solid 0.15em rgba(208, 200, 205, 0.6);
+  margin-top: 0;
+  color: rgba(44, 50, 61, 1);
+  padding-top: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: rgba(44, 50, 61, 0.8);
+}
+h3 { font-size: 1.3em; }
+
+a {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 0.625em 0;
+}
+
+p { margin: 1em 0; }
+
+img {
+  max-width: 100%;
+  border-radius: 0.4em;
+}
+
+/***********
+*  sidebar
+***********/
+
+#sidebar > * { padding: 1.5em; }
+#sidebar { background: #F5F6F7; }
+#search { background: rgba(208,200,205, 0.4); }
+
+#search input {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  border: solid 2px #F56A6A;
+}
+
+#menu { padding: 1.5em; }
+
+#menu li {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: solid 1px #CCC;
+}
+
+#menu li:first-child {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+#menu li a {
+  display: block;
+}
+
+/***********
+*  main
+***********/
+
+main > * { padding: 1.5em; }
+
+#master-heading {
+  margin: 2em 0;
+  padding: 2em 0;
+  border-bottom: 0.3em solid #F56A6A;
+}
+
+.heading h2 {
+  border-bottom: solid 3px #F56A6A;
+  display: inline-block;
+  margin: 0 0 2em;
+  padding: 0 0.75em 0.5em 0;
+}
+
+.posts article {
+  padding: 1.5em;
+  position: relative;
+}
+
+.actions { margin-top: 2em; }
+
+.actions li {
+  display: inline-block;
+  margin: 0.3em 0.2em 0.3em 0;
+}
+
+.actions a {
+  border: solid 2px #F56A6A;
+  color: #F56A6A;
+  font-weight: 700;
+  padding: 0.7em 1.4em;
+  border-radius: 0.3em;
+}
+
+/***********
+*  footer
+***********/
+
+footer {
+  padding: 3em;
+  background: #F5F6F7;
+  text-align: right;
+}
+
+/* Nos breakpoints : 768 / 992 / 1200 */
+
+html {
+  font-size: 1rem;
+}
+
+body.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* RWD (Responsive Web Design) */
+
+#master-heading div {
+  /*Nécessaire pour ne pas déformer l'image (par défaut : stretch)*/
+  align-items: flex-start;
+}
+
+/* Tablettes */
+@media screen and (min-width: 768px) {
+  /* On augmente légèrement la taille du texte à 14px */
+  body {
+    font-size: 0.875rem;
+  }
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+  /* On augmente légèrement la taille du texte à 16px */
+  body {
+    font-size: 1rem;
+  }
+
+  #master-heading hgroup {
+    text-align: right;
+  }
+
+  #master-heading img {
+    width: 50%;
+  }
+}
